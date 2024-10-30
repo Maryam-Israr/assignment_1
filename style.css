@@ -3,6 +3,7 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
+/*------------------- home page ------------------*/
 .intro{
     min-height: 100vh;
     width: 100%;
@@ -214,3 +215,49 @@ p{
     cursor: pointer;
     padding: 18px 0;
 }
+/*------------------- about us page -----------------*/
+.about-header{
+    height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/about\ back.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: whitesmoke;
+}
+.about-header h1{
+    margin-top: 60px;
+}
+.about-us{
+    width: 100%;
+    padding: 78px 0px;   
+}
+.about-us img{
+    height: auto;
+    width: 480px;
+}
+.about-text{
+    width: 550px;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text h1{
+    color: #080808;
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-text p{
+    color: black;
+    font-size: 18px;
+    margin-bottom: 45px;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+/*--------------------- Contact us page ----------------*/
