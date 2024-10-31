@@ -1,6 +1,6 @@
 *{
     margin: 0;
-    padding: 0;
+    padding: 0;   
     font-family: 'Poppins', sans-serif;
 }
 /*------------------- home page ------------------*/
@@ -64,6 +64,38 @@ nav img{
     margin: 10px 0 40px;
     font-size: 14px;
     color: #fff;
+}
+nav .fa{
+    display: none;
+}
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #252644;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transform: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
 }
 
 .themes{
@@ -135,6 +167,9 @@ p{
 }
 .sec:hover .overlay{
     opacity: 100;
+}
+@media(max-width: 700px){
+
 }
 
 #page3{
@@ -215,6 +250,7 @@ p{
     cursor: pointer;
     padding: 18px 0;
 }
+
 /*------------------- about us page -----------------*/
 .about-header{
     height: 70vh;
@@ -261,6 +297,9 @@ p{
     line-height: 28px;
 }
 /*--------------------- Contact us page ----------------*/
+.background-img{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/contact\ bg.png);    
+}
 .contact{
     position: relative;
     min-height: 100vh;
@@ -269,8 +308,8 @@ p{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/contact\ bg.png);
     background-size: cover;
+    
 }
 .contact .content{
     max-width: 800px;
@@ -378,4 +417,74 @@ p{
     cursor: pointer;
     padding: 10px;
     font-size: 18px;
+}
+@media (max-width: 991px){
+    .contact{
+        padding: 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contactInfo{
+        margin-bottom: 40px;
+    }
+    .container .contactInfo,
+    .contactForm{
+        width: 100%;
+    }
+}
+/*--------------------------workout page----------------------------*/
+.workout-header{
+    height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/workout-1.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.workout-header h1{
+    margin-top: 50px;
+}
+
+/*---------------------yoga page-----------------------------------*/
+.yoga-header{
+    height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/yoga-2.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.yoga-header h1{
+    margin-top: 47px;
+}
+
+/*---------------------nutrition page-----------------------------------*/
+.nutrition-header{
+    height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/n-bg.jpeg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.nutrition-header h1{
+    margin-top: 47px;
+}
+
+/*---------------------gallery page-----------------------------------*/
+.gallery-header{
+    height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/gallery-backg.jpeg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.gallery-header h1{
+    margin-top: 67px;
 }
