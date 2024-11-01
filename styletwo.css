@@ -259,3 +259,19 @@ h2{
 .gallery-header h1{
     margin-top: 67px;
 }
+.container{
+    max-width: 100%;
+    padding: 50px 8%;
+    box-sizing: border-box;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.gallery img{
+    max-width: 400px;
+    min-height: 350px;
+    padding: 0.5rem;
+}
