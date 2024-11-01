@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;   
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px; 
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color:antiquewhite;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0;
+    height:2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+nav .fa{
+    display: none;
+}
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #252644;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transform: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+/*-------------------footer -----------------*/
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.icons .fa-brands{
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+
+/*------------------- about us page -----------------*/
+.about-header{
+    height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/about\ back.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: whitesmoke;
+}
+.about-header h1{
+    margin-top: 60px;
+}
+.about-us{
+    width: 100%;
+    padding: 78px 0px;   
+}
+.about-us img{
+    height: auto;
+    width: 480px;
+}
+.about-text{
+    width: 550px;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text h1{
+    color: #fff;
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-text p{
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 45px;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+
+
+/*--------------------------workout page----------------------------*/
+.workout-header{
+    height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/workout-1.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.workout-header h1{
+    margin-top: 50px;
+}
+html,body{
+    background-color: #102028;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #d8d8d8;
+}
+.workouts{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+;
+}
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 10px;
+    gap: 20px;
+}
+.section:nth-child(even) .text,
+.section:nth-child(even) .para-left{
+    order: 2;
+}
+.section-number{
+    font-size: 5rem;
+    color: rgba(216, 216, 216, 0.2);
+}
+.section-title{
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    color: #d0c170;
+    font-weight: bold;
+    margin-bottom:10px;
+}
+h2{
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #f4f4f4;
+}
+.description{
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+.image img{
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+}
+.text, .para-left{
+    max-width: 500px;
+}
+.left{
+    text-align: left;
+}
+.right{
+    text-align: right;
+}
+.image a{
+    display: block;
+}
+
+
+/*---------------------yoga page-----------------------------------*/
+.yoga-header{
+    height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/yoga-2.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.yoga-header h1{
+    margin-top: 47px;
+}
+
+
+/*---------------------nutrition page-----------------------------------*/
+.nutrition-header{
+    height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/n-bg.jpeg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.nutrition-header h1{
+    margin-top: 47px;
+}
+
+
+/*---------------------gallery page-----------------------------------*/
+.gallery-header{
+    height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/gallery-backg.jpeg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.gallery-header h1{
+    margin-top: 67px;
+}
